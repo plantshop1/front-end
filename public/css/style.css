@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f4c3a;
+    color: white;
+    padding: 15px 120px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+} 
+
+/* LEFT MENU */
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* CENTER LOGO */
+.nav-center {
+    position: absolute;
+    top: 50%;              
+    left: 50%;             
+    transform: translate(-50%, -50%);
+}
+
+.nav-center img {
+    height: 90px;
+    object-fit: contain;
+}
+
+.nav-center h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.nav-left a:hover {
+    opacity: 0.7;
+}
+
+.nav-right i:hover {
+    transform: scale(1.2);
+}
+
+.nav-right span:hover {
+    transform: scale(1.2);
+}
+
+/* RIGHT ICON */
+.nav-right i {
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f4c3a;
+    color: white;
+    padding: 80px 60px;
+}
+
+/* RIGHT */
+.hero-right {
+    width: 40%;
+}
+
+.hero-right img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: white;
+    color: #0f4c3a;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* LEFT */
+.hero-left {
+    width: 50%;
+}
+
+.hero-left h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 16px;
+    color: #cfcfcf;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+}
+
+/* LEFT COLUMN */
+.grid-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SIZE */
+.small {
+    width: 180px;
+    height: 180px;
+}
+
+.big {
+    width: 320px;
+    height: 380px;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(15, 76, 58, 0.95),
+        rgba(15, 76, 58, 0)
+    );
+
+    color: white;
+    padding: 25px;
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.4s;
+}
+.overlay h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ddd;
+}
+.overlay h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* BUTTON */
+.read-btn {
+     display: inline-block;
+    background: white;
+    color: #0f4c3a;
+    padding: 12px 25px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.read-btn:hover {
+    background: #e6e6e6;
+}
+
+/* HOVER */
+.card:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FEATURED SECTION */
+.featured {
+    padding: 60px;
+    background: #f5f5f5;
+}
+
+/* HEADER */
+.featured-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.featured-header h2 {
+    margin: 0;
+}
+
+.featured-header a {
+    text-decoration: none;
+    color: #0f4c3a;
+}
+
+/* PRODUCT LIST */
+.product-list {
+    display: flex;
+    gap: 20px;
+}
+
+/* CARD */
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+/* IMAGE */
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+/* NAME */
+.product-card h4 {
+    margin: 10px 0 5px;
+}
+
+/* PRICE */
+.product-card p {
+    margin: 0;
+    color: #555;
+}
+
+/* BUTTON */
+.buy-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: 1px solid #0f4c3a;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* HOVER */
+.buy-btn:hover {
+    background: #0f4c3a;
+    color: white;
+}
